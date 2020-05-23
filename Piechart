@@ -1,0 +1,51 @@
+#Pie chart
+"""import matplotlib.pyplot as plt
+
+days = [1,2,3,4,5] #This is a 5 day schedule
+
+sleeping = [7,8,6,11,7]
+eating = [2,3,4,3,2]
+working = [7,8,7,2,2]
+playing = [8,5,7,8,13]
+
+#It is a 24 hr time so total must be equal to 24
+#It is the avg for the 5 days
+slices = [7,2,2,13] #slices are used to give the % of place for all the parameter here sleeping,eating,working playing
+
+activities  = ['sleeping','eating','working','playing'] # this is used for labels
+
+colours = ['green','blue','red','orange'] #This is used for colors
+
+
+#here slices gives the shape of pie chart and labels gives labels and colors gives colors
+#shadow provides the shadow to the pie chart and explodes pulls that particular task to somewhat outside the pie chart
+#autopct = '%1.1f%%' gives the percentage
+
+plt.pie(slices,labels = activities,colors = colours,startangle = 90,shadow = True,explode=(0,0.3,0,0),autopct = '%1.1f%%')
+
+plt.title("Pie chart")
+plt.show()"""
+
+
+
+
+
+import matplotlib.pyplot as plt
+
+days = [1,2,3]
+
+work = [10,8,12]
+sleep = [8,10,8]
+eat = [6,6,4]
+
+slices = [30,26,16]
+
+labels = ['work','sleep','eat']
+colors = ['red','green','blue']
+
+
+plt.pie(slices,labels = labels,colors = colors,startangle = 90,shadow = True,autopct = '%1.1f%%')
+plt.show()
+
+
+
