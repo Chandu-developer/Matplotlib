@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+x = [1,2,3,4,5,6,7,8]
+y = [3,7,5,6,3,5,2,4]
+
+#scatter keyword is used for scatter plot
+#label is user to provide info with legend
+#marker is used to show the points as o,*,...,
+#s represents the size
+plt.scatter(x,y,label = 'skill', color = "Red", marker = 'o',s = 100)
+
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Scatter plot\n")
+plt.legend()
+
+plt.show()
