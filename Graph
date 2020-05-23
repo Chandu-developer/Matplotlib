@@ -1,0 +1,22 @@
+#It contains graph with 2 lines
+
+import matplotlib.pyplot as plt
+
+x1 = [1,2,4] #This x and y is one graph line
+y1 = [3,6,5]
+
+x2= [6,8,9] #This is for 2nd graph line
+y2 =[5,8,9]
+
+plt.plot(x1,y1,label = "First Line")
+plt.plot(x2,y2,label = "Second Line")
+
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+
+plt.title("Two Lines in single graph\n")
+
+#This is very helpful bcz see the graph contains 2 lines 1)blue and 2)Orange so the legend shows which label belongs to which colour.
+plt.legend()
+
+plt.show()
